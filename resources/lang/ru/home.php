@@ -1,6 +1,6 @@
 <?php
-use App\Content;
-$contents = Content::all()->groupBy('block');
+use App\Models\Contents as Contents;
+$contents = Contents::all()->groupBy('block');
 if( !empty($contents) ){
     $plucked = [];
     foreach ($contents as $key => $content){

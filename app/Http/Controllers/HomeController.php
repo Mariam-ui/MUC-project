@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Content;
+use App\Models\Emails;
 use Illuminate\Http\Request;
-use App\Mail;
 use App\Mail\SendMail;
 use Illuminate\Support\Facades\Validator;
 
@@ -51,6 +51,12 @@ class HomeController extends Controller
             if (\Mail::failures()) {
                 return redirect()->back()->with('message', 'Something went wrong!');
             }
+            $email = new Emails;
+
+            $email->name = $request->name;
+            $email->email= $request->email;
+            $email->message= $request->message;
+            $email->save();
             return redirect()->back()->with('message', 'Message successfully sent!');
         }
     }

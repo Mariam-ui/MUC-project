@@ -2,21 +2,21 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Requests\ContentsRequest;
+use App\Http\Requests\EmailsRequest;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
 /**
- * Class ContentsCrudController
+ * Class EmailsCrudController
  * @package App\Http\Controllers\Admin
  * @property-read \Backpack\CRUD\app\Library\CrudPanel\CrudPanel $crud
  */
-class ContentsCrudController extends CrudController
+class EmailsCrudController extends CrudController
 {
     use \Backpack\CRUD\app\Http\Controllers\Operations\ListOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\CreateOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\UpdateOperation;
-//    use \Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
+    use \Backpack\CRUD\app\Http\Controllers\Operations\DeleteOperation;
     use \Backpack\CRUD\app\Http\Controllers\Operations\ShowOperation;
 
     /**
@@ -26,9 +26,9 @@ class ContentsCrudController extends CrudController
      */
     public function setup()
     {
-        CRUD::setModel(\App\Models\Contents::class);
-        CRUD::setRoute(config('backpack.base.route_prefix') . '/contents');
-        CRUD::setEntityNameStrings('contents', 'contents');
+        CRUD::setModel(\App\Models\Emails::class);
+        CRUD::setRoute(config('backpack.base.route_prefix') . '/emails');
+        CRUD::setEntityNameStrings('emails', 'emails');
     }
 
     /**
@@ -39,18 +39,14 @@ class ContentsCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-//        CRUD::setFromDb(); // columns
+        CRUD::setFromDb(); // columns
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
          * - CRUD::column('price')->type('number');
          * - CRUD::addColumn(['name' => 'price', 'type' => 'number']); 
          */
-        CRUD::column('block');
-        CRUD::column('key');
-        CRUD::column('en');
-        CRUD::column('ru');
-        CRUD::column('de');
+
         $this->crud->denyAccess('create');
     }
 
@@ -62,20 +58,15 @@ class ContentsCrudController extends CrudController
      */
     protected function setupCreateOperation()
     {
-        CRUD::setValidation(ContentsRequest::class);
+        CRUD::setValidation(EmailsRequest::class);
 
-        // CRUD::setFromDb(); // fields
+        CRUD::setFromDb(); // fields
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
          * - CRUD::field('price')->type('number');
          * - CRUD::addField(['name' => 'price', 'type' => 'number'])); 
          */
-        CRUD::addField(['name' => 'block', 'type' => 'text','attributes' => ['readonly' => 'readonly'] ]);
-        CRUD::addField(['name' => 'key', 'type' => 'text','attributes' => ['readonly' => 'readonly'] ]);
-        CRUD::field('en');
-        CRUD::field('ru');
-        CRUD::field('de');
     }
 
     /**

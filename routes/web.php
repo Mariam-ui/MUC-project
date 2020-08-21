@@ -14,9 +14,4 @@
 Route::get('/', 'HomeController@index');
 Route::get('/{locale}', 'HomeController@setLocale');
 Route::post('/send-mail', 'HomeController@sendMail');
-/*
-Route::get('login', function () {
-    return view('welcome');
-})->name('login');
-*/
 
