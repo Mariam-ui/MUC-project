@@ -16,7 +16,7 @@
                     <span></span>
                 </div>
                 <nav class="menu">
-                    <ul class="menu-list">
+                    <ul class="menu-list main-menu-list">
                         <li><a href="#search">@lang('home.2.title')</a></li>
                         <li><a href="#observation">@lang('home.3.title')</a></li>
                         <li><a href="#compromat">@lang('home.4.title')</a></li>
@@ -159,7 +159,7 @@
                     <img src="images/logo.svg" alt="Logo">
                 </a>
                 <nav class="menu">
-                    <ul class="menu-list">
+                    <ul class="menu-list menu-footer-list">
                         <li><a href="#search">@lang('home.2.title')</a></li>
                         <li><a href="#observation">@lang('home.3.title')</a></li>
                         <li><a href="#compromat">@lang('home.4.title')</a></li>

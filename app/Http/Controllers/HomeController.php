@@ -46,7 +46,7 @@ class HomeController extends Controller
                 'message' => $request->message,
             ];
 
-            \Mail::to('mucBusinessTest@gmail.com')->send(new SendMail($details));
+            \Mail::to('1808aam@gmail.com')->send(new SendMail($details));
 
             if (\Mail::failures()) {
                 return redirect()->back()->with('message', 'Something went wrong!');
