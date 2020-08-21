@@ -77,7 +77,7 @@
                 <p class="red-title">@lang('home.1.title')</p>
                 <h2>@lang('home.1.sub_title')</h2>
                 <span class="half-text">@lang('home.1.text')</span>
-                <a href="#sendEmail" class="btn-text">@lang('home.1.button')</a>
+                <a href="#sendEmail" id="sendBtnHref" class="btn-text">@lang('home.1.button')</a>
             </section>
             <section id="search" class="section2" data-aos="flip-right" data-aos-easing="linear" data-aos-duration="1000">
                 <h1 class="red-effect">@lang('home.2.title')</h1>
@@ -89,21 +89,24 @@
                     <span class="about-text">@lang('home.2.category_4')</span>
                 </div>
             </section>
-            <section id="observation" class="section3" data-aos="flip-left" data-aos-easing="linear"  data-aos-duration="1000" >
+            <section class="section3" data-aos="flip-left" data-aos-easing="linear"  data-aos-duration="1000" >
+                <div id="observation" >
                 <h1 class="red-effect">@lang('home.3.title')</h1>
                 <span class="half-text">@lang('home.3.text')</span>
-                <div>
-                    <span class="about-text">@lang('home.3.category_1')</span>
-                    <span class="about-text">@lang('home.3.category_2')</span> </br>
-                    <span class="about-text">@lang('home.3.category_3')</span>
-                    <span class="about-text">@lang('home.3.category_4')</span>
+                    <div>
+                        <span class="about-text">@lang('home.3.category_1')</span>
+                        <span class="about-text">@lang('home.3.category_2')</span> </br>
+                        <span class="about-text">@lang('home.3.category_3')</span>
+                        <span class="about-text">@lang('home.3.category_4')</span>
+                    </div>
                 </div>
             </section>
         </div>
 
     </div>
     <div class="bottom-content">
-        <section id="compromat" class="section4" data-aos="flip-up" data-aos-duration="2000">
+        <section class="section4" data-aos="flip-up" data-aos-duration="2000">
+            <div id="compromat">
             <div class="my-container">
                 <h1 class="red-effect">@lang('home.4.title')</h1>
                 <span class="half-text">@lang('home.4.text')</span>
@@ -111,6 +114,7 @@
                     <span class="about-text">@lang('home.4.category_1')</span>
                     <span class="about-text">@lang('home.4.category_2')</span>
                 </div>
+            </div>
             </div>
         </section>
         <section class="section5" data-aos="flip-down" data-aos-duration="2000">

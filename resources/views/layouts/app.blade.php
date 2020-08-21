@@ -91,6 +91,7 @@
                 $('.lengs').toggleClass('open');
             });
         }
+
         $('.menu-tigger').on('click', function () {
             $(this).toggleClass('button-tigger');
             $('nav').toggleClass('open');
@@ -98,11 +99,21 @@
 
         $(".menu .menu-list a").on("click", function(e) {
             e.preventDefault();
+            if ($('body').width() <= 768){
+                $('.menu').toggleClass('open');
+            }
             const href = $(this).attr("href");
             $("html, body").animate({
                 scrollTop: $(href).offset().top - 71
             }, 600);
         });
+        $("#sendBtnHref").on("click", function(e) {
+            e.preventDefault();
+            const href = $(this).attr("href");
+            $("html, body").animate({
+                scrollTop: $(href).offset().top - 71
+            }, 600);
+    });
 
     });
 
