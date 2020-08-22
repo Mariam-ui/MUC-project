@@ -269,7 +269,7 @@ header {
     background: #ffffff;
     color: #000000;
     padding: 15px;
-    max-width: 275px;
+    max-width: 300px;
     margin: 50px 0;
     text-align: center;
 }
@@ -302,8 +302,10 @@ header {
 }
 .about-text{
     background: #1E1F22;
-    display: inline-block;
+    display: inline-flex;
     padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
     width: 340px;
     text-align: center;
     font: 24px "Montserrat-Medium";
@@ -401,7 +403,7 @@ label{
     margin-bottom: 8px;
     display: inline-block;
 }
-.red-btn{
+input[type="submit"].red-btn{
     background: #E50019;
     color: #ffffff;
     margin-top: 35px;
@@ -412,6 +414,13 @@ label{
     outline: none;
     cursor: pointer;
     font-family: 'Montserrat-Medium';
+}
+input[type="submit"]{
+    -webkit-appearance: none; /*Safari/Chrome*/
+    -moz-appearance: none; /*Firefox*/
+    -ms-appearance: none; /*IE*/
+    -o-appearance: none; /*Opera*/
+    appearance: none;
 }
 footer {
     width: 100%;
@@ -655,8 +664,8 @@ footer {
         width: 100%;
         text-align: center;
     }
-    .red-btn{
-        width: 100%;
+    input[type="submit"].red-btn{
+        min-width: 100%;
     }
     .footer-menu{
         text-align: center;
@@ -676,6 +685,26 @@ footer {
     .my-container {
         padding: 0 20px;
     }
+    .form-box{
+        padding: 40px 20px;
+    }
+    .section6, .section3 {
+        padding: 70px 0 ;
+    }
+}
+@media only screen and (max-width: 375px){
+    header .menu{
+        width: 240px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 22px;
+    }
+    h3{
+        font-size: 18px;
+    }
 }
 label.error {
     color: #E50019;
@@ -685,6 +714,7 @@ label.error {
 
 input.error {
     border-bottom: 1px solid #E50019;
+    border-radius: 0;
     font-weight: 300;
     color: #E50019;
 }
