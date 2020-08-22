@@ -11,7 +11,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/aos.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-
+    <link rel="shortcut icon" href="{{ asset('images/favicon.svg') }}" />
 
     <script src="{{ asset('js/aos.js') }}"></script>
     <script src="{{ asset('js/jquery.min.js') }}"></script>
@@ -134,6 +134,7 @@
                 scrollTop: $(href).offset().top - 71
             }, 600);
     });
+
 
     });
 
