@@ -7,7 +7,7 @@
         <div class="my-container">
             <input type="hidden" id="local" value="{{app()->getLocale()}}">
             <div class="header-menu">
-                <a href="index.html" class="logo">
+                <a href="{{ url('/') }}" class="logo">
                     <img src="images/logo.svg" alt="Logo">
                 </a>
                 <div class="menu-tigger">
@@ -34,6 +34,9 @@
                                 @elseif(app()->getLocale() === 'de')
                                     Ger
                                     <i class="sl-flag flag-ger"></i>
+                                @elseif(app()->getLocale() === 'fr')
+                                    Fr
+                                    <i class="sl-flag flag-fr"></i>
                                 @endif
                                 <i class="arrow-icon"></i>
                                 <ul class="lengs" id="lang">
@@ -50,6 +53,11 @@
                                     <li>
                                         <a href="{{ url('/de') }}" class="{{ app()->getLocale() == 'de' ? 'active' :''}}">
                                             <span>German</span><i class="sl-flag flag-ger"><div id="ger"></div></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url('/fr') }}" class="{{ app()->getLocale() == 'fr' ? 'active' :''}}">
+                                            <span>French</span><i class="sl-flag flag-fr"><div id="fr"></div></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -73,13 +81,13 @@
                 {{--</div>--}}
             {{--@endif--}}
             {{-----------------------------}}
-            <section class="section1" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
+            <section class="section1" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                 <p class="red-title">@lang('home.1.title')</p>
                 <h2>@lang('home.1.sub_title')</h2>
                 <span class="half-text">@lang('home.1.text')</span>
                 <a href="#sendEmail" id="sendBtnHref" class="btn-text">@lang('home.1.button')</a>
             </section>
-            <section id="search" class="section2" data-aos="flip-right" data-aos-easing="linear" data-aos-duration="1000">
+            <section id="search" class="section2" data-aos="fade-right"  data-aos-duration="700">
                 <h1 class="red-effect">@lang('home.2.title')</h1>
                 <span class="half-text">@lang('home.2.text')</span>
                 <div>
@@ -89,7 +97,7 @@
                     <span class="about-text">@lang('home.2.category_4')</span>
                 </div>
             </section>
-            <section class="section3" data-aos="flip-left" data-aos-easing="linear"  data-aos-duration="1000" >
+            <section class="section3" data-aos="fade-left"  data-aos-duration="700" >
                 <div id="observation" >
                 <h1 class="red-effect">@lang('home.3.title')</h1>
                 <span class="half-text">@lang('home.3.text')</span>
@@ -105,7 +113,7 @@
 
     </div>
     <div class="bottom-content">
-        <section class="section4" data-aos="flip-up" data-aos-duration="2000">
+        <section class="section4" data-aos="fade-right"  data-aos-duration="700">
             <div id="compromat">
             <div class="my-container">
                 <h1 class="red-effect">@lang('home.4.title')</h1>
@@ -117,12 +125,12 @@
             </div>
             </div>
         </section>
-        <section class="section5" data-aos="flip-down" data-aos-duration="2000">
+        <section class="section5" data-aos="fade-left"  data-aos-duration="700">
             <div class="my-container">
                 <h3 class="half-text">@lang('home.5.title')</h3>
             </div>
         </section>
-        <section id="sendEmail" class="section6"  data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <section id="sendEmail" class="section6"  data-aos="fade-down"  data-aos-duration="700">
             <div class="my-container">
                 <div class="form-email">
                     <form id="sendEmailForm" action="/send-mail" method="POST" class="form-box">
