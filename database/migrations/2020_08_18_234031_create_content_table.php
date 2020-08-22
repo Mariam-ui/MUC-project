@@ -20,6 +20,7 @@ class CreateContentTable extends Migration
             $table->longText('en');
             $table->longText('ru');
             $table->longText('de');
+            $table->longText('fr');
             $table->timestamps();
         });
     }

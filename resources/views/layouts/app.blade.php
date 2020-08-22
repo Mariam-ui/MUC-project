@@ -57,6 +57,14 @@
                 email: "Geben Sie die richtige E-Mail-Adresse ein",
             }
         };
+        var messages_fr = {
+            name: "Vous devez entrer un nom dans le champ.",
+            message: "Le champ de message est obligatoire.",
+            email: {
+                required: "Le champ E-Mail est obligatoire.",
+                email: "S'il vous plaît, mettez une adresse email valide",
+            }
+        };
 
         var massage = messages_ru;
         if($('#local').val() != ''){

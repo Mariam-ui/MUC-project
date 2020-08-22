@@ -19,7 +19,7 @@ class Contents extends Model
     // protected $primaryKey = 'id';
      public $timestamps = true;
     protected $guarded = ['id'];
-    // protected $fillable = ['en','ru','de'];
+     protected $fillable = ['en','ru','de','fr'];
     // protected $hidden = [];
     // protected $dates = [];
 

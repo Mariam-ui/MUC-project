@@ -51,6 +51,7 @@ class ContentsCrudController extends CrudController
         CRUD::column('en');
         CRUD::column('ru');
         CRUD::column('de');
+        CRUD::column('fr');
         $this->crud->denyAccess('create');
     }
 
@@ -76,6 +77,7 @@ class ContentsCrudController extends CrudController
         CRUD::field('en');
         CRUD::field('ru');
         CRUD::field('de');
+        CRUD::field('fr');
     }
 
     /**

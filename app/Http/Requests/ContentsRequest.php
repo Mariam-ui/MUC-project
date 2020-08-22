@@ -28,6 +28,7 @@ class ContentsRequest extends FormRequest
         return [
              'en' => 'required|min:5|max:255',
              'ru' => 'required|min:5|max:255',
+             'fr' => 'required|min:5|max:255',
              'de' => 'required|min:5|max:255'
         ];
     }
