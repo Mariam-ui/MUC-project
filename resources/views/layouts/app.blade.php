@@ -113,9 +113,15 @@
                 for (i = 0; i < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
                     if (openDropdown.classList.contains('open')) {
+                        if( openDropdown.classList.contains('menu') ){
+                            $('.menu-tigger').removeClass('button-tigger');
+                        }
                         openDropdown.classList.remove('open');
-                        $('.menu-tigger').removeClass('button-tigger');
                     }
+
+                }
+                if( $('.menu-tigger').hasClass('button-tigger')){
+                    $('.menu-tigger').removeClass('button-tigger');
                 }
             }
         }
