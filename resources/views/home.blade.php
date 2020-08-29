@@ -10,21 +10,21 @@
                 <a href="{{ url('/') }}" class="logo">
                     <img src="images/logo.svg" alt="Logo">
                 </a>
-                <div class="menu-tigger">
+                <div class="menu-tigger dropdownBtn">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <nav class="menu">
+                <nav class="menu dropdowns">
                     <ul class="menu-list main-menu-list">
-                        <li><a href="#search">@lang('home.2.title')</a></li>
-                        <li><a href="#observation">@lang('home.3.title')</a></li>
-                        <li><a href="#compromat">@lang('home.4.title')</a></li>
+                        <li><a href="#search">@lang('home.second_block.title')</a></li>
+                        <li><a href="#observation">@lang('home.third_block.title')</a></li>
+                        <li><a href="#compromat">@lang('home.fourth_block.title')</a></li>
                     </ul>
                     <div>
-                        <span class="tel"> @lang('home.7.tel') </span>
+                        <span class="tel"> @lang('home.seventh_block.tel') </span>
                         <ul class="sl-nav">
-                            <li class="sel-leng">
+                            <li class="sel-leng dropdownBtn">
                                 @if(app()->getLocale() === 'ru')
                                     Rus
                                     <i class="sl-flag flag-rus"></i>
@@ -39,7 +39,7 @@
                                     <i class="sl-flag flag-fr"></i>
                                 @endif
                                 <i class="arrow-icon"></i>
-                                <ul class="lengs" id="lang">
+                                <ul class="lengs dropdowns" id="lang">
                                     <li>
                                         <a href="{{ url('/ru') }}"  class="{{ app()->getLocale() == 'ru' ? 'active' :''}}">
                                             <span>Russian</span><i class="sl-flag flag-rus"><div id="rus"></div></i>
@@ -82,30 +82,30 @@
             {{--@endif--}}
             {{-----------------------------}}
             <section class="section1" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
-                <p class="red-title">@lang('home.1.title')</p>
-                <h2>@lang('home.1.sub_title')</h2>
-                <span class="half-text">@lang('home.1.text')</span>
-                <a href="#sendEmail" id="sendBtnHref" class="btn-text">@lang('home.1.button')</a>
+                <p class="red-title">@lang('home.first_block.title')</p>
+                <h2>@lang('home.first_block.sub_title')</h2>
+                <span class="half-text">@lang('home.first_block.text')</span>
+                <a href="#sendEmail" id="sendBtnHref" class="btn-text">@lang('home.first_block.button')</a>
             </section>
             <section id="search" class="section2" data-aos="fade-right"  data-aos-duration="700">
-                <h1 class="red-effect">@lang('home.2.title')</h1>
-                <span class="half-text">@lang('home.2.text')</span>
+                <h1 class="red-effect">@lang('home.second_block.title')</h1>
+                <span class="half-text">@lang('home.second_block.text')</span>
                 <div>
-                    <span class="about-text">@lang('home.2.category_1')</span>
-                    <span class="about-text">@lang('home.2.category_2')</span> </br>
-                    <span class="about-text">@lang('home.2.category_3')</span>
-                    <span class="about-text">@lang('home.2.category_4')</span>
+                    <span class="about-text">@lang('home.second_block.category_1')</span>
+                    <span class="about-text">@lang('home.second_block.category_2')</span> </br>
+                    <span class="about-text">@lang('home.second_block.category_3')</span>
+                    <span class="about-text">@lang('home.second_block.category_4')</span>
                 </div>
             </section>
             <section class="section3" data-aos="fade-left"  data-aos-duration="700" >
                 <div id="observation" >
-                <h1 class="red-effect">@lang('home.3.title')</h1>
-                <span class="half-text">@lang('home.3.text')</span>
+                <h1 class="red-effect">@lang('home.third_block.title')</h1>
+                <span class="half-text">@lang('home.third_block.text')</span>
                     <div>
-                        <span class="about-text">@lang('home.3.category_1')</span>
-                        <span class="about-text">@lang('home.3.category_2')</span> </br>
-                        <span class="about-text">@lang('home.3.category_3')</span>
-                        <span class="about-text">@lang('home.3.category_4')</span>
+                        <span class="about-text">@lang('home.third_block.category_1')</span>
+                        <span class="about-text">@lang('home.third_block.category_2')</span> </br>
+                        <span class="about-text">@lang('home.third_block.category_3')</span>
+                        <span class="about-text">@lang('home.third_block.category_4')</span>
                     </div>
                 </div>
             </section>
@@ -116,18 +116,18 @@
         <section class="section4" data-aos="fade-right"  data-aos-duration="700">
             <div id="compromat">
             <div class="my-container">
-                <h1 class="red-effect">@lang('home.4.title')</h1>
-                <span class="half-text">@lang('home.4.text')</span>
+                <h1 class="red-effect">@lang('home.fourth_block.title')</h1>
+                <span class="half-text">@lang('home.fourth_block.text')</span>
                 <div>
-                    <span class="about-text">@lang('home.4.category_1')</span>
-                    <span class="about-text">@lang('home.4.category_2')</span>
+                    <span class="about-text">@lang('home.fourth_block.category_1')</span>
+                    <span class="about-text">@lang('home.fourth_block.category_2')</span>
                 </div>
             </div>
             </div>
         </section>
         <section class="section5" data-aos="fade-left"  data-aos-duration="700">
             <div class="my-container">
-                <h3 class="half-text">@lang('home.5.title')</h3>
+                <h3 class="half-text">@lang('home.fifth_block.title')</h3>
             </div>
         </section>
         <section id="sendEmail" class="section6"  data-aos="fade-down"  data-aos-duration="700">
@@ -135,22 +135,22 @@
                 <div class="form-email">
                     <form id="sendEmailForm" action="/send-mail" method="POST" class="form-box">
                         {{ csrf_field() }}
-                        <h4>@lang('home.6.title')</h4>
-                        <label>@lang('home.6.name_label')</label>
+                        <h4>@lang('home.sixth_block.title')</h4>
+                        <label>@lang('home.sixth_block.name_label')</label>
                         <div class="input-group">
                             <div>
-                                <input type="text" name="name" placeholder="@lang('home.6.name_placeholder')">
+                                <input type="text" name="name" placeholder="@lang('home.sixth_block.name_placeholder')">
                                 @if ($errors->has('name')) <p style="color:red;">{{ $errors->first('name') }}</p> @endif
                             </div>
                             <div>
-                                <input type="email" name="email" placeholder="@lang('home.6.email_placeholder')">
+                                <input type="email" name="email" placeholder="@lang('home.sixth_block.email_placeholder')">
                                 @if ($errors->has('email')) <p style="color:red;">{{ $errors->first('email') }}</p> @endif
                             </div>
                         </div>
-                        <label for="message-text">@lang('home.6.message_label')</label>
+                        <label for="message-text">@lang('home.sixth_block.message_label')</label>
                         <textarea id="message-text" name="message" rows="7"></textarea>
                         @if ($errors->has('message')) <p style="color:red;">{{ $errors->first('message') }}</p> @endif
-                        <input type="submit" id="submit" class="red-btn" value="@lang('home.6.button')">
+                        <input type="submit" id="submit" class="red-btn" value="@lang('home.sixth_block.button')">
                     </form>
                 </div>
 
@@ -168,13 +168,13 @@
                 </a>
                 <nav class="menu">
                     <ul class="menu-list menu-footer-list">
-                        <li><a href="#search">@lang('home.2.title')</a></li>
-                        <li><a href="#observation">@lang('home.3.title')</a></li>
-                        <li><a href="#compromat">@lang('home.4.title')</a></li>
-                        <li><a href="#">@lang('home.7.privacy_policy')</a></li>
+                        <li><a href="#search">@lang('home.second_block.title')</a></li>
+                        <li><a href="#observation">@lang('home.third_block.title')</a></li>
+                        <li><a href="#compromat">@lang('home.fourth_block.title')</a></li>
+                        <li><a href="#">@lang('home.seventh_block.privacy_policy')</a></li>
                     </ul>
                     <div>
-                        <span>@lang('home.7.text') </span>
+                        <span>@lang('home.seventh_block.text') </span>
                     </div>
                 </nav>
             </div>

@@ -39,7 +39,6 @@
                 email: "Enter correct E-Mail address",
             }
         };
-
         var messages_ru = {
             name: "Необходимо ввести имя в поле.",
             message: "Поле сообщения является обязательным.",
@@ -48,7 +47,6 @@
                 email: "Введите правильный адрес электронной почты",
             }
         };
-
         var messages_de = {
             name: "Das Namensfeld ist erforderlich.",
             message: "Das Nachrichtenfeld ist erforderlich.",
@@ -67,6 +65,7 @@
         };
 
         var massage = messages_ru;
+
         if($('#local').val() != ''){
           if( $('#local').val() == 'en' )  {
               massage = messages_en;
@@ -93,12 +92,10 @@
         });
 
         if ($('body').width() >= 768){
-            // intercept click event
-            $('.sel-leng').on('click', function () {
+            $('.dropdownBtn').on('click', function () {
                 if ($('body').width() <= 768){
                     $('.menu').toggleClass('open');
                 }else{
-                    $(this).toggleClass('sel-leng');
                     $('.lengs').toggleClass('open');
                 }
             });
@@ -108,6 +105,20 @@
             $(this).toggleClass('button-tigger');
             $('nav').toggleClass('open');
         });
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdownBtn')) {
+                var dropdowns = document.getElementsByClassName("dropdowns");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('open')) {
+                        openDropdown.classList.remove('open');
+                        $('.menu-tigger').removeClass('button-tigger');
+                    }
+                }
+            }
+        }
 
         $(".menu .main-menu-list a").on("click", function(e) {
             e.preventDefault();
@@ -134,7 +145,6 @@
                 scrollTop: $(href).offset().top - 71
             }, 600);
     });
-
 
     });
 
