@@ -2,8 +2,9 @@
 
 @section('header')
     @parent
-
     <header>
+        @include('layouts.analitics')
+        @include('layouts.metrica')
         <div class="my-container">
             <input type="hidden" id="local" value="{{app()->getLocale()}}">
             <div class="header-menu">
