@@ -733,3 +733,11 @@ input.error {
 textarea.error{
     border-color: #E50019;
 }
+.telIcon{
+    background: url("../images/whatsapp.svg") no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+    background-size: 100% ;
+    width: 20px;
+    height: 20px;
+}

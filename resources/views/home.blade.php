@@ -23,7 +23,9 @@
                         <li><a href="#compromat">@lang('home.fourth_block.title')</a></li>
                     </ul>
                     <div>
-                        <span class="tel"> @lang('home.seventh_block.tel') </span>
+                        <span class="tel"> @lang('home.seventh_block.tel')
+                            <span class="telIcon"></span>
+                        </span>
                         <ul class="sl-nav">
                             <li class="sel-leng dropdownBtn">
                                 @if(app()->getLocale() === 'ru')
@@ -74,7 +76,6 @@
 @section('content')
     <div class="top-content">
         <div class="my-container">
-
             {{--fix this succes message part--}}
             {{--@if(session()->has('message'))--}}
                 {{--<div class="alert alert-success">--}}
