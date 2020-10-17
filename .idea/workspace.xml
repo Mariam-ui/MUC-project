@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="252cdb1b-5643-41d0-b6a6-914e82611b51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/whatsapp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/muc_busness.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/muc_busness.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/backpack/base.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/backpack/base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,53 +15,6 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>input-group</find>
-      <find>conta</find>
-      <find>container</find>
-      <find>text</find>
-      <find>texta</find>
-      <find>input</find>
-      <find>textarea</find>
-      <find>form-b</find>
-      <find>craftable</find>
-      <find>translations</find>
-      <find>data-button-type=&quot;delete&quot;</find>
-      <find>Backpack Admin Panel</find>
-      <find>Backpack\Base\app\Http\Controllers\Auth\MyAccountController</find>
-      <find>480</find>
-      <find>flag</find>
-      <find>.btn-text</find>
-      <find>.red-btn</find>
-      <find>border</find>
-      <find>flex</find>
-      <find>red</find>
-      <find>url</find>
-      <find>leng</find>
-      <find>menu-tr</find>
-      <find>sel-leng</find>
-      <find>dropdowns</find>
-      <find>menu</find>
-      <find>dropdownBtn</find>
-      <find>home.4</find>
-      <find>home.foo</find>
-      <find>button-tigger</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>home.first_block</replace>
-      <replace>home.second_block</replace>
-      <replace>home.third_block</replace>
-      <replace>home.fourth_block</replace>
-      <replace>home.fifth_block</replace>
-      <replace>home.sixth_block</replace>
-      <replace>home.seventh_block</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>C:\xampp\htdocs\muc_busness\vendor</dir>
-      <dir>C:\xampp\htdocs\muc_busness</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -189,7 +140,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -234,7 +185,8 @@
       <workItem from="1598002162124" duration="18341000" />
       <workItem from="1598724604473" duration="10128000" />
       <workItem from="1602854196587" duration="1823000" />
-      <workItem from="1602869706764" duration="707000" />
+      <workItem from="1602869706764" duration="2352000" />
+      <workItem from="1602950093558" duration="914000" />
     </task>
     <servers />
   </component>

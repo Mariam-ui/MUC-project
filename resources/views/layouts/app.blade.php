@@ -11,7 +11,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/aos.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <link rel="shortcut icon" href="{{ asset('images/favicon.svg') }}" />
+    <link rel="shortcut icon" href="{{ asset('images/favicon.svg') }}"/>
 
     <script src="{{ asset('js/aos.js') }}"></script>
     <script src="{{ asset('js/jquery.min.js') }}"></script>
@@ -66,15 +66,16 @@
 
         var massage = messages_ru;
 
-        if($('#local').val() != ''){
-          if( $('#local').val() == 'en' )  {
-              massage = messages_en;
-          }else{
-              if( $('#local').val() == 'de' ){
-                  massage = messages_de;
-              }
-          }
-        };
+        if ($('#local').val() != '') {
+            if ($('#local').val() == 'en') {
+                massage = messages_en;
+            } else {
+                if ($('#local').val() == 'de') {
+                    massage = messages_de;
+                }
+            }
+        }
+        ;
         $('#sendEmailForm').validate({
             rules: {
                 name: {
@@ -91,11 +92,11 @@
             messages: massage
         });
 
-        if ($('body').width() >= 768){
+        if ($('body').width() >= 768) {
             $('.dropdownBtn').on('click', function () {
-                if ($('body').width() <= 768){
+                if ($('body').width() <= 768) {
                     $('.menu').toggleClass('open');
-                }else{
+                } else {
                     $('.lengs').toggleClass('open');
                 }
             });
@@ -106,29 +107,29 @@
             $('nav').toggleClass('open');
         });
 
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             if (!event.target.matches('.dropdownBtn')) {
                 var dropdowns = document.getElementsByClassName("dropdowns");
                 var i;
                 for (i = 0; i < dropdowns.length; i++) {
                     var openDropdown = dropdowns[i];
                     if (openDropdown.classList.contains('open')) {
-                        if( openDropdown.classList.contains('menu') ){
+                        if (openDropdown.classList.contains('menu')) {
                             $('.menu-tigger').removeClass('button-tigger');
                         }
                         openDropdown.classList.remove('open');
                     }
 
                 }
-                if( $('.menu-tigger').hasClass('button-tigger')){
+                if ($('.menu-tigger').hasClass('button-tigger')) {
                     $('.menu-tigger').removeClass('button-tigger');
                 }
             }
         }
 
-        $(".menu .main-menu-list a").on("click", function(e) {
+        $(".menu .main-menu-list a").on("click", function (e) {
             e.preventDefault();
-            if ($('body').width() <= 768){
+            if ($('body').width() <= 768) {
                 $('.menu').toggleClass('open');
             }
             const href = $(this).attr("href");
@@ -136,7 +137,7 @@
                 scrollTop: $(href).offset().top - 71
             }, 600);
         });
-        $(".menu .menu-footer-list a").on("click", function(e) {
+        $(".menu .menu-footer-list a").on("click", function (e) {
             e.preventDefault();
             const href = $(this).attr("href");
             $("html, body").animate({
@@ -144,14 +145,17 @@
             }, 600);
         });
 
-        $("#sendBtnHref").on("click", function(e) {
+        $("#sendBtnHref").on("click", function (e) {
             e.preventDefault();
             const href = $(this).attr("href");
             $("html, body").animate({
                 scrollTop: $(href).offset().top - 71
             }, 600);
-    });
+        });
 
+        $(".alert-close").on('click',function (){
+            $('.alert').fadeOut(200);
+        })
     });
 
 </script>
