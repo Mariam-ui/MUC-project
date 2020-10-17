@@ -82,9 +82,6 @@
                     <a class="alert-close" title="Close">&times;</a>
                 </div>
             @endif
-                <div class="alert alert-success">test
-                    <a class="alert-close" title="Close">&times;</a>
-                </div>
             <section class="section1" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                 <p class="red-title">@lang('home.first_block.title')</p>
                 <h2>@lang('home.first_block.sub_title')</h2>
